@@ -1,61 +1,67 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
-html{
-    font-size: 15px;
-    text-align: center;
+html {
+  font-size: 15px;
+  text-align: center;
+  color: teal;
+  font-family: sans-serif;
 }
-h1{
-    font-size: 4rem; /* 4 *15 (root el)*/
+h1 {
+  font-size: 4rem; /* 4 *15 (root el)*/
 }
-p{
-    font-size: 2em; /* 2*15 --the same of rem here because the parent is HTML */
-    padding:1em 0em;
+p {
+  font-size: 2em; /* 2*15 --the same of rem here because the parent is HTML */
+  padding: 1em 0em;
 }
-.container{
-    border: 2px solid #333;
-    width: 90%;
-    max-width: 100%;
-    margin:20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3em;
+.container {
+  border: 2px solid #333;
+  width: 90%;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
 }
-.el{
-    width: 23%;
-    height: 200px;
-    background-color: aqua;
-    margin: 10px;
-    border: 8px solid blue;
+.el {
+  width: 25%; /* 100/4=25 */
+  height: 300px;
+  margin-top: 10px;
+  /* border: 2px solid blue; */
+}
+.el img {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  object-fit: cover;
 }
 
-@media (max-width:1200px){
-    html{
-        font-size: 13px;
-        color: teal;
-    }
-    .el{
-        width: 30%;
-        border-color: violet;
-    }
+@media (max-width: 1200px) {
+  html {
+    font-size: 13px;
+  }
+  .el {
+    width: 33%; /* 100/3 = 33.33 */
+    /* border-color: violet; */
+  }
 }
-@media (max-width:900px){
-    html{
-        font-size: 11px;
-    }
-    .el{
-        width: 45%;
-        border-color: red;
-    }
+@media (max-width: 900px) {
+  html {
+    font-size: 11px;
+  }
+  .el {
+    width: 50%; /* 100/2 = 50 */
+    /* border-color: red; */
+  }
 }
-@media (max-width:600px){
-    html{
-        font-size: 8px;
-    }
-    .el{
-        width: 100%;
-        border-color: yellow;
-    }
-} 
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+  .el {
+    width: 100%; /* 100/1 = 100 */
+    /* border-color: yellow; */
+  }
+}
